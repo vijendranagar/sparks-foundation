@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <script src="script.js"></script>
+    <script src="js/jquery-min-jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Transfer Money</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cols-md-6">
+            
+        </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top " >
+          <div class="container-fluid " style="background-color: #ADEFD1FF">
+              <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#" style="color:#00203FFF " >GRIP BANK</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav" >
+                <li class="active"><a href="home.html" style="color:#ADEFD1FF">Home</a></li>
+                <li><a href="customer.html"style="color: #00203FFF">Customer List</a></li>
+                <li><a href="transfermoney.html" style="color: #00203FFF">Transfer Money</a></li>
+                <li><a href="transactionlist.php" style="color: #00203FFF" >Transaction History</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="about.html" style="color: #00203FFF" ><span class="glyphicon glyphicon-log-in" ></span> About Us</a></li>
+                  
+              </ul>
+            </div>
+          </div>
+        </nav>
+          
+          
+    </div>
+    <div class="container"  style="margin-top: 70px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center" style="font-family:sans-serif" id="abc2"><img style="height:100px"src="images/download.png">  GRIP BANKING SYSTEM</h5>
+                <hr>
+            </div><br><br>
+            <div id="form" class="col-md-6">
+                
+                <form action="database.php" method="POST">
+                    <div class="form-group">
+                        <h3 class="abc">MONEY TRANSFER</h3>
+                        <label for="email" class="control-label"> * Enter your username
+                        </label>
+                        <input type="email" id="email" name="email"class="form-control" placeholder="username" required="">
+                        <label for="email" class="control-label" >* Select customer
+                        </label>
+                        
+                        <select class="form-control" id="sel1" name="customername" >
+                            <option>Liam</option>
+                            <option>Noah</option>
+                            <option>Olivia</option>
+                            <option>Ava</option>
+                            <option>Sophia</option>
+                            <option>William</option>
+                            <option>James</option>
+                            <option>Benjamin</option>
+                            <option>Mason</option>
+                            <option>Ethan</option>
+                          </select>
+                        </div>
+                        
+                        <label class="control-label">* Enter your amount
+                        </label>
+                        <input type="number" id="number" name="amount"class="form-control" placeholder="Enter your amount" required="">
+                        <br>
+                        <button id="btn btn2" class="btn btn-lr btn-success" onclick="on()"     >Transfer Money</button>
+                    </div>
+                   
+                </form>
+                
+                <img class="image"src="images/images (2).png">
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
